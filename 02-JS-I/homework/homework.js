@@ -232,11 +232,7 @@ function obtenerAreaRectangulo(alto, ancho) {
 function retornarPerimetro(lado){
   //Escibe una función a la cual reciba el valor del lado de un cuadrado y retorne su perímetro.
   //Escribe tu código aquí
-  function calcularperimetro (                                                                                                                                                                                                                                                                                                                                                                                                                                                          ) {
-
-
-
-  } 
+  return (4 * lado);                                                                                                                                                                                                                                                                                                                                                                                                   
 
 }
 
@@ -244,7 +240,10 @@ function retornarPerimetro(lado){
 function areaDelTriangulo(base, altura){
   //Desarrolle una función que calcule el área de un triángulo.
   //Escribe tu código aquí
-
+  var c = (base * altura) / 2
+  
+  return (c);
+  
 }
 
 
@@ -252,7 +251,11 @@ function deEuroAdolar(euro){
   //Supongamos que 1 euro equivale a 1.20 dólares. Escribe un programa que reciba
   //como parámetro un número de euros y calcule el cambio en dólares.
   //Escribe tu código aquí
-  
+  var cantidad = 
+  euro == 1.20
+  return (euro * cantidad);
+
+
 }
 
 
