@@ -164,7 +164,7 @@ function redondearNumero(num) {
   return Math.round (num);
 
 }
-
+        
 function redondearHaciaArriba(num) {
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
   // Tu código:
@@ -176,7 +176,7 @@ function numeroRandom() {
   //Generar un número al azar entre 0 y 1 y devolverlo
   //Pista: investigá qué hace el método Math.random()
   
-  return Math.round (Math.random ()) *1 + 0
+  return (Math.random ()) *1 + 0
 
   
 }
@@ -200,8 +200,7 @@ function agregarSimboloExclamacion(str) {
   // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
   // Ejemplo: "hello world" pasaría a ser "hello world!"
   // Tu código:
-  return str + '!'
-
+  return str + ('!');
 }
 
 function combinarNombres(nombre, apellido) {
@@ -209,7 +208,7 @@ function combinarNombres(nombre, apellido) {
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
   var espacio = ' '
-  return (nombre) + espacio + (apellido) 
+  return (nombre) + espacio + (apellido); 
   
 
 }
@@ -218,20 +217,27 @@ function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
+  return ("Hola " + nombre + "!");
   
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
   // Retornar el area de un rectángulo teniendo su altura y ancho
   // Tu código:
-  
+  return (alto * ancho);
+
 }
 
 
 function retornarPerimetro(lado){
   //Escibe una función a la cual reciba el valor del lado de un cuadrado y retorne su perímetro.
   //Escribe tu código aquí
-  
+  function calcularperimetro (                                                                                                                                                                                                                                                                                                                                                                                                                                                          ) {
+
+
+
+  } 
+
 }
 
 
