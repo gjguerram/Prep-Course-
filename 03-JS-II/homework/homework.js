@@ -50,16 +50,16 @@ function saludo(idioma) {
   // Si "idioma" es "ingles", devuelve "Hello!"
   // Si "idioma" no es ninguno de los anteiores o es `undefined` devuelve "Hola!"
   // Tu código:
-  if (idioma === aleman)
+  if (idioma === 'aleman')
   return 'Guten Tag!'
-  else if (idioma === mandarin)
+  else if (idioma === 'mandarin')
   return 'Ni Hao!'
-  else if (idioma === ingles) 
+  else if (idioma === 'ingles') 
   return 'Hello!'
-  else if (idioma === undefined)
+  else if (idioma === 'undefined')
   return 'Hola!'
   else
-  return 'Hola'
+  return 'Hola!'
 
 
 
@@ -77,7 +77,7 @@ function colors(color) {
   var frase = ''
   switch (color) {
     case 'blue':
-    frase = 'This is Blue'
+    frase = 'This is blue'
     break
 
     case 'red':
@@ -85,19 +85,20 @@ function colors(color) {
      break
 
       case 'green':
-        frase = 'This is Green'
+        frase = 'This is green'
         break
 
         case 'orange':
-          frase = 'This is Orange'
+          frase = 'This is orange'
           break
 
           default: 
           frase = 'Color not found'
           break
-
   } 
-alert (frase)
+
+return frase
+  
 
 }
 
@@ -146,7 +147,21 @@ function fizzBuzz(numero) {
   // Si "numero" es divisible entre 5, devuelve "buzz"
   // Si "numero" es divisible entre 3 y 5 (ambos), devuelve "fizzbuzz"
   // De lo contrario, devuelve el numero
+
+   if (numero % 3 === 0 && numero % 5 === 0)
+   return 'fizzbuzz'
+
+   else if (numero % 5 === 0 && numero % 3 != 0)
+   return 'buzz'
+   
+   else if (numero % 3 === 0 && numero % 5 != 0)
+    return 'fizz'
+
+   else (numero % 3 != 0 && numero % 5 != 0)
+   return numero
 }
+
+
 
 function operadoresLogicos(num1, num2, num3) {
   //La función recibe tres números distintos. 
@@ -155,6 +170,22 @@ function operadoresLogicos(num1, num2, num3) {
   //Si num3 es más grande que num1 y num2, aumentar su valor en 1 y retornar el nuevo valor.
   //0 no es ni positivo ni negativo. Si alguno de los argumentos es 0, retornar "Error".
   //Si no se cumplen ninguna de las condiciones anteriores, retornar false. 
+
+ switch (num1, num2, num3)
+ case (num1 > 0 && num1 > num2 && num1 > num3)
+ return 'Numero 1 es mayor y positivo'
+ else if (num1 < 0 || num2 < 0 || num3 < 0)
+ return 'Hay negativos'
+ 
+ if (num3 > num1 && num3 > num2)
+ return num3 + 1
+ else false
+ if (num1 === 0 || num2 === 0 || num3 === 0)
+ return 'Error'
+ else 
+ return false
+
+
 }
 
 function esPrimo(numero) {
